@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - LOVE TRIDE (TLBC)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="LGGG(1).jpg" alt="LOVE TRIDE Logo" class="logo-image">
+                <div class="logo-text">LOVE TRIDE 🕊❤🔥 (TLBC)</div>
+            </div>
+            <button class="mobile-menu-toggle" id="menu-icon"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links" id="nav-list">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1>About LOVE TRIDE 🕊❤🔥 (TLBC)</h1>
+                <p>Stirring up a burning love for God in the hearts of men, rekindling the fire of faith, and empowering individuals to live beyond the ordinary.</p>
+            </div>
+        </section>
+
+        <!-- Vision Section -->
+        <section id="vision">
+            <div class="section-content">
+                <div class="section-text">
+                    <h2>Our Vision</h2>
+                    <p>At LOVE TRIDE 🕊❤🔥 (TLBC), our vision is to stir up a burning love for God in the hearts of men. We aim to kindle and rekindle the fire of faith, creating an atmosphere where individuals are empowered to live beyond the ordinary and step into their God-given potential.</p>
+                </div>
+                <div class="section-image">
+                    <img src="teams.jpg" alt="Vision Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section id="mission">
+            <div class="section-content">
+                <div class="section-text">
+                    <h2>Our Mission</h2>
+                    <p>Our mission is to inspire and nurture a deep, transformative relationship with God. We are committed to equipping individuals with the tools to lead with love and purpose, making a lasting impact in their communities and the world.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values Section -->
+        <section id="core-values">
+            <div class="section-content">
+                <div class="section-text">
+                    <h2>Core Values</h2>
+                    <ul>
+                        <li><strong>Faith:</strong> Building a strong foundation of faith in God.</li>
+                        <li><strong>Love:</strong> Demonstrating unconditional love in all we do.</li>
+                        <li><strong>Empowerment:</strong> Equipping individuals to live beyond limitations.</li>
+                        <li><strong>Community:</strong> Fostering a sense of belonging and support.</li>
+                        <li><strong>Leadership:</strong> Raising leaders to fulfill their God-given callings.</li>
+                    </ul>
+                </div>
+                <div class="section-image">
+                    <img src="pics5.jpg" alt="Core Values Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Team Section -->
+        <section id="team">
+            <div class="section-content">
+                <div class="section-text">
+                    <h2>Meet Our Team</h2>
+                    <p>Our dedicated team is passionate about serving God and empowering others. Together, we work to create an atmosphere of love, faith, and growth.</p>
+                </div>
+                <div class="team-gallery">
+                    <div class="team-member">
+                        <img src="pics5.jpg" alt="Team Member 1">
+                        <p>DONOMIC INALEGWU - Founder</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="pics4.jpg" alt="Team Member 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="section-content">
+                <div class="section-text">
+                    <h2>Contact Us</h2>
+                    <p>We’d love to hear from you! Reach out to us for more information about our programs, events, and how you can get involved.</p>
+                    <p>Email: connectthelordsbridecommunity@gmail.com</p>
+                    <p>Phone: +123 8031154725</p>
+                    <p>Phone: +123 9033448703</p>
+                </div>
+                <div class="section-image">
+                    <img src="teams.jpg" alt="Contact Image">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 LOVE TRIDE 🕊❤🔥 (TLBC). The joy of walking with God is the simplicity He brings to your understanding of what it means to know Him.</p>
+            <div class="social-media">
+                <a href="https://linktr.ee/connectthelordsbridecommunity"><i class="fab fa-facebook"></i></a>
+                <a href="https://linktr.ee/connectthelordsbridecommunity"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        // Load the footer dynamically
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+</body>
+</html>

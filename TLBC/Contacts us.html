@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - LOVE TRIDE (TLBC)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="LGGG(1).jpg" alt="LOVE TRIDE Logo" class="logo-image">
+                <div class="logo-text">LOVE TRIDE 🕊❤🔥 (TLBC)</div>
+            </div>
+            <button class="mobile-menu-toggle" id="menu-icon"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links" id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#contact-us.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Contact LOVE TRIDE 🕊❤🔥 (TLBC)</h1>
+                <p>We’re here to connect with you. Reach out to us for inquiries, support, or to join our community.</p>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section id="contact-us">
+            <div class="section-content">
+                <div class="section-text">
+                    <h2>Contact Information</h2>
+                    <p><strong>Email:</strong> connectthelordsbridecommunity@gmail.com</p>
+                    <p><strong>Phone:</strong> +123 9033448703</p>
+                    <p><strong>Phone:</strong> +123 8031154725</p>
+                </div>
+                <div class="section-image">
+                    <img src="pics5.jpg" alt="Contact Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact-form">
+            <div class="form-container">
+                <h2>Send Us a Message</h2>
+                <form action="submit_form.php" method="POST">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section id="map">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.4194154846812!3d37.77492977975971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064f0e4b1b1%3A0x4d9f0b9b0b9b0b9b!2s123%20Faith%20Street%2C%20Love%20City!5e0!3m2!1sen!2sus!4v1686049823468!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 LOVE TRIDE 🕊❤🔥 (TLBC). The joy of walking with God is the simplicity He brings to your understanding of what it means to know Him.</p>
+            <div class="social-media">
+                <a href="https://linktr.ee/connectthelordsbridecommunity"><i class="fab fa-facebook"></i></a>
+                <a href="https://linktr.ee/connectthelordsbridecommunity"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        // Load the footer dynamically
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - LOVE TRIDE (TLBC)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="LGGG(1).jpg" alt="LOVE TRIBE Logo" class="logo-image">
+                <div class="logo-text">LOVE TRIBE 🕊❤🔥 (TLBC)</div>
+            </div>
+            <button class="mobile-menu-toggle" id="menu-icon"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="join-us">
+            <h2>Join Us</h2>
+            <p>Become a part of our community and connect with like-minded individuals. Click the button below to join our WhatsApp group!</p>
+            
+            <!-- WhatsApp Join Button -->
+            <div class="whatsapp-join">
+                <a href="https://linktr.ee/connectthelordsbridecommunity" target="_blank" class="join-button">
+                    <i class="fab fa-whatsapp"></i> Join Our WhatsApp Group
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 LOVE TRIDE 🕊❤🔥 (TLBC). The joy of walking with God is the simplicity He brings to your understanding of what it means to know Him.</p>
+            <div class="social-media">
+                <a href="https://linktr.ee/connectthelordsbridecommunity"><i class="fab fa-facebook"></i></a>
+                <a href="https://linktr.ee/connectthelordsbridecommunity"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Load the footer dynamically
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+</body>
+</html>
